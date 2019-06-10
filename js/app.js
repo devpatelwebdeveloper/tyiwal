@@ -1,3 +1,4 @@
+// Widget Dropdown variables
 const webSelect = [
   {
     groupName: "Group 1",
@@ -401,40 +402,7 @@ const webSelect = [
   }
 ];
 
-const webSelectOld = [
-  {
-    websiteName: "Canada English",
-    group: "Gold"
-  },
-  {
-    websiteName: "Canada French",
-    group: "Silver"
-  },
-  {
-    websiteName: "UK",
-    group: "Bronze"
-  },
-  {
-    websiteName: "Shop Canada",
-    group: "Platinum"
-  },
-  {
-    websiteName: "Shop International",
-    group: "Gold"
-  },
-  {
-    websiteName: "Track Your Impact",
-    group: "Silver"
-  },
-  {
-    websiteName: "Donate",
-    group: "Platinum"
-  },
-  {
-    websiteName: "Trips",
-    group: "Gold"
-  }
-];
+// Widgets HTML
 const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="80" width="100%" frameborder="0"></iframe>`;
 const websiteWidgetFrame = `<form>
     <select class="webWidget" name="Website Dropdown">
@@ -444,9 +412,28 @@ const websiteWidgetFrame = `<form>
     </button>
   </form>`;
 
-$(function() {
-  // Add URLs based on Group
+const app = {};
 
+// Toggling the widget
+app.toggle = () => {
+  $(".toggleWidget").click(function() {
+    $(this).toggleClass("active");
+    if ($(this).hasClass("active")) {
+      $(this).text("Have code?");
+      $("#havecode").addClass("hide");
+      $("#donthavecode").removeClass("hide");
+    } else {
+      $(this).text("Don't have code?");
+      $("#havecode").removeClass("hide");
+      $("#donthavecode").addClass("hide");
+    }
+  });
+  $("#havecode").append(codeWidgetFrame);
+  $("#donthavecode").append(websiteWidgetFrame);
+};
+
+// Getting the link value based on the Groups
+app.linkValue = () => {
   webSelect.forEach((item, index) => {
     if (item.groupName === "Group 1") {
       item.value = "https://www.we.org";
@@ -548,27 +535,10 @@ $(function() {
   });
   console.table(webSelect);
   // Toggle of Widget
+};
 
-  $(".toggleWidget").click(function() {
-    $(this).toggleClass("active");
-    if ($(this).hasClass("active")) {
-      $(this).text("Have code?");
-      $("#havecode").addClass("hide");
-      $("#donthavecode").removeClass("hide");
-    } else {
-      $(this).text("Don't have code?");
-      $("#havecode").removeClass("hide");
-      $("#donthavecode").addClass("hide");
-    }
-  });
-
-  // Display widget as per toggle tab
-
-  $("#havecode").append(codeWidgetFrame);
-  $("#donthavecode").append(websiteWidgetFrame);
-
-  // Dropdown for the Brands
-
+// Dropdown Option
+app.widgetOption = () => {
   $(".webWidget").select2();
   for (let i = 0; i < webSelect.length; i++) {
     let websiteDrop = $(".country");
@@ -578,9 +548,10 @@ $(function() {
 
     $(".webWidget").append(websiteDrop);
   }
+};
 
-  // Submit target URL open to new window
-
+// Submit button for the widget
+app.widgetSubmit = () => {
   $(".submitWebButton").click(function() {
     event.preventDefault();
     const selectedWeb = $(this)
@@ -591,4 +562,22 @@ $(function() {
     //window.open(selectedWeb);
     alert(selectedWeb);
   });
+};
+
+// Brands Widget
+app.widget = () => {
+  app.linkValue();
+  app.widgetOption();
+  app.widgetSubmit();
+};
+
+//Initialize the app
+app.init = () => {
+  app.toggle();
+  app.widget();
+};
+
+// DOM Ready
+$(function() {
+  app.init();
 });
