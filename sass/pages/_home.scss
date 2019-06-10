@@ -1,0 +1,8 @@
+.section-widget {
+  background-color: $color-white;
+  padding: 5rem 0;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}

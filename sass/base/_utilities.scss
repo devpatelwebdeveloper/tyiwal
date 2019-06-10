@@ -1,0 +1,74 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+// Dev Widget
+.hide {
+  display: none;
+}
+
+.submit-btn {
+  width: 36px;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.575;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: bold;
+  background-color: #e7b200;
+  border: 1px solid transparent;
+}
+
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  width: calc(100% - 36px) !important;
+  vertical-align: middle;
+}
+
+.select2-container--default .select2-selection--single {
+  width: 100% !important;
+  height: 36px !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.575 !important;
+  border-radius: 5px 0px 0px 5px !important;
+  border: 1px solid #cacaca !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 5px !important;
+  right: 1px;
+  width: 20px;
+}
