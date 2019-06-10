@@ -13,8 +13,7 @@
   }
 
   @include respond(phone) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    height: 75vh;
   }
 
   &__logo-box {
@@ -34,7 +33,7 @@
     transform: translate(-50%, -50%);
     text-align: left;
     @include respond(phone) {
-      top: 50%;
+      top: 55%;
       left: 40%;
     }
   }

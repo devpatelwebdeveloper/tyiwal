@@ -300,8 +300,7 @@ body {
       background-image: url(../images/walWidgetHero.png); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      height: 75vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -316,7 +315,7 @@ body {
     text-align: left; }
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
-        top: 50%;
+        top: 55%;
         left: 40%; } }
 
 .section-widget {
