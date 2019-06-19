@@ -250,7 +250,7 @@ body {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 3rem; } }
+        margin-bottom: 0.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -266,10 +266,10 @@ body {
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 3rem; } }
+          margin-bottom: 0.5rem; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
-        width: 50% !important; } }
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
