@@ -117,7 +117,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: #1b253e;
+  color: #e51937;
   margin: 1rem; }
   @media only screen and (max-width: 56.25em) {
     .or {
@@ -130,7 +130,7 @@ body {
 
 .paragraph {
   font-size: 1.5rem;
-  color: #00aeef; }
+  color: #0072ce; }
   .paragraph:not(:last-child) {
     margin-bottom: 0.5rem; }
   @media only screen and (max-width: 37.5em) {
@@ -309,23 +309,17 @@ body {
 
 .header {
   height: 60vh;
-  background-image: url(../images/walWidgetHero.png);
+  background-color: #0072ce;
   background-size: cover;
   background-position: top;
   position: relative;
   margin-bottom: 0.5rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: url(../images/walWidgetHero.png); } }
+      background-color: #0072ce; } }
   @media only screen and (max-width: 37.5em) {
     .header {
       height: 55vh; } }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
   .header__text-box {
     position: absolute;
     top: 40%;

@@ -54,7 +54,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: $color-aoda;
+  color: $color-red;
   margin: 1rem;
   @include respond(tab-port) {
     font-size: 2rem;
@@ -68,7 +68,7 @@ body {
 
 .paragraph {
   font-size: $default-paragraph-size;
-  color: $color-we-brand;
+  color: $color-walgreens-blue;
   &:not(:last-child) {
     margin-bottom: 0.5rem;
   }

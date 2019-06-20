@@ -1,6 +1,6 @@
 .header {
   height: 60vh;
-  background-image: url(../images/walWidgetHero.png);
+  background-color: $color-walgreens-blue;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -9,21 +9,11 @@
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
-    background-image: url(../images/walWidgetHero.png);
+    background-color: $color-walgreens-blue;
   }
 
   @include respond(phone) {
     height: 55vh;
-  }
-
-  &__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-
-  &__logo {
-    height: 3.5rem;
   }
 
   &__text-box {
