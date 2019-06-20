@@ -67,7 +67,7 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: $default-paragraph-size;
   color: $color-we-brand;
   &:not(:last-child) {
     margin-bottom: 0.5rem;

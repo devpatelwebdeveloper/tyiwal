@@ -80,7 +80,7 @@ body {
 body {
   font-family: "flama", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   color: #000; }
 
@@ -129,7 +129,7 @@ body {
       line-height: 2rem; } }
 
 .paragraph {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #00aeef; }
   .paragraph:not(:last-child) {
     margin-bottom: 0.5rem; }
@@ -168,7 +168,7 @@ body {
   width: 36px;
   height: 36px;
   padding: 6px 12px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.575;
   border-radius: 0px 5px 5px 0px;
   font-weight: bold;
@@ -209,7 +209,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   border: none;
   cursor: pointer; }
 
@@ -242,7 +242,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   color: #00aeef;
   display: inline-block;
   text-decoration: none;
