@@ -7,32 +7,30 @@ body {
   font-family: "flama", sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
-
   line-height: 1.7;
   color: $color-black;
 }
-
 .heading-primary {
   color: $color-white;
-  //text-transform: uppercase;
-
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
   &--main {
     display: block;
     font-size: 10rem;
+    line-height: 7rem;
     font-weight: 400;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    margin-bottom: 1rem;
     @include respond(tab-port) {
       font-size: 6rem;
       line-height: 7rem;
     }
     @include respond(phone) {
       font-size: 3rem;
-      line-height: 3.7rem;
+      line-height: 4rem;
     }
   }
 

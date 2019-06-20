@@ -24,7 +24,8 @@
     text-align: left;
     @include respond(phone) {
       top: 60%;
-      left: 40%;
+      right: -32%;
+      left: 52%;
     }
   }
 }
