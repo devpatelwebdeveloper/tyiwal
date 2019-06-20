@@ -1,5 +1,5 @@
 .header {
-  height: 80vh;
+  height: 60vh;
   background-image: url(../images/walWidgetHero.png);
   background-size: cover;
   background-position: top;
@@ -13,7 +13,7 @@
   }
 
   @include respond(phone) {
-    height: 70vh;
+    height: 50vh;
   }
 
   &__logo-box {

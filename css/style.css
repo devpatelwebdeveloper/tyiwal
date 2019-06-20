@@ -80,7 +80,7 @@ body {
 body {
   font-family: "flama", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: #000; }
 
@@ -112,13 +112,30 @@ body {
       .heading-primary--sub {
         font-size: 1.2rem; } }
 
+.or {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b253e;
+  margin: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .or {
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .or {
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.2rem;
+  color: #00aeef; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .paragraph {
-      font-size: 2.5rem; } }
+      font-size: 1.2rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -192,7 +209,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer; }
 
@@ -225,7 +242,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #00aeef;
   display: inline-block;
   text-decoration: none;
@@ -270,6 +287,8 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
+  .row .col-1-of-1 {
+    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -289,7 +308,7 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 80vh;
+  height: 60vh;
   background-image: url(../images/walWidgetHero.png);
   background-size: cover;
   background-position: top;
@@ -300,7 +319,7 @@ body {
       background-image: url(../images/walWidgetHero.png); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 70vh; } }
+      height: 50vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
