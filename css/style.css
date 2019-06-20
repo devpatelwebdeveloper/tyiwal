@@ -80,7 +80,7 @@ body {
 body {
   font-family: "flama", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   line-height: 1.7;
   color: #000; }
 
@@ -101,8 +101,8 @@ body {
         line-height: 7rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 5rem;
-        line-height: 6rem; } }
+        font-size: 3rem;
+        line-height: 3.7rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -129,10 +129,10 @@ body {
       line-height: 2rem; } }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #00aeef; }
   .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 0.5rem; }
   @media only screen and (max-width: 37.5em) {
     .paragraph {
       font-size: 1.2rem; } }
@@ -168,7 +168,7 @@ body {
   width: 36px;
   height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.575;
   border-radius: 0px 5px 5px 0px;
   font-weight: bold;
@@ -209,7 +209,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   border: none;
   cursor: pointer; }
 
@@ -242,7 +242,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #00aeef;
   display: inline-block;
   text-decoration: none;
@@ -313,13 +313,13 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  margin-bottom: 3rem; }
+  margin-bottom: 0.5rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: url(../images/walWidgetHero.png); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 50vh; } }
+      height: 55vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -334,7 +334,7 @@ body {
     text-align: left; }
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
-        top: 55%;
+        top: 60%;
         left: 40%; } }
 
 .section-widget {
@@ -342,4 +342,4 @@ body {
   padding: 5rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-widget {
-      padding: 2rem 0; } }
+      padding: 0.5rem 0; } }

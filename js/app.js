@@ -407,7 +407,7 @@ const webSelect = [
 ];
 
 // Widgets HTML
-const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="60" width="100%" frameborder="0"></iframe>`;
+const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="70" width="100%" frameborder="0"></iframe>`;
 const websiteWidgetFrame = `<form>
     <select class="webWidget" name="Website Dropdown">
       <option value="">Select the Brand</option> </select

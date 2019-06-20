@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
@@ -13,7 +13,7 @@
   }
 
   @include respond(phone) {
-    height: 50vh;
+    height: 55vh;
   }
 
   &__logo-box {
@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%);
     text-align: left;
     @include respond(phone) {
-      top: 55%;
+      top: 60%;
       left: 40%;
     }
   }
