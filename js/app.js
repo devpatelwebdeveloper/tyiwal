@@ -42,7 +42,7 @@ const webSelect = [
   },
   {
     groupName: "Group 3",
-    websiteName: "Give Education Chocolate Bar"
+    websiteName: "Hershey’s Milk Chocolate"
   },
   {
     groupName: "Group 3",
@@ -123,6 +123,10 @@ const webSelect = [
   {
     groupName: "Group 13",
     websiteName: "Wylers's Light"
+  },
+  {
+    groupName: "Group 13",
+    websiteName: "Hawaiian Punch"
   },
   {
     groupName: "Group 14",
@@ -533,8 +537,6 @@ app.linkValue = () => {
       item.value = "https://www.trackyourimpact.com";
     }
   });
-  console.table(webSelect);
-  // Toggle of Widget
 };
 
 // Dropdown Option
