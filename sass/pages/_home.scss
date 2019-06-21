@@ -1,6 +1,6 @@
 .section-widget {
   background-color: $color-white;
-  padding: 5rem 0;
+  //padding: 5rem 0;
 
   @include respond(tab-port) {
     padding: 0.5rem 0;
