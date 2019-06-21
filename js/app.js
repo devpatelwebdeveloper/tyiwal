@@ -382,7 +382,7 @@ const webSelect = [
   },
   {
     groupName: "Group 26",
-    websiteName: "Well At Walgreens Hand Sanitizer"
+    websiteName: "Walgreens"
   },
   {
     groupName: "Group 26",
