@@ -1,0 +1,40 @@
+.header {
+  height: 80vh;
+  background-image: url(../images/walWidgetHero.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 3rem;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: url(../images/walWidgetHero.png);
+  }
+
+  @include respond(phone) {
+    height: 70vh;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    @include respond(phone) {
+      top: 55%;
+      left: 40%;
+    }
+  }
+}
