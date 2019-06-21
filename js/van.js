@@ -515,7 +515,7 @@ app.linkValue = () => {
 app.widgetOption = () => {
   const select = document.getElementById("example-select");
 
-  $("#example-select").select2();
+  //$("#example-select").select2();
 
   for (let i = 0; i < webSelect.length; i++) {
     select.options[select.options.length] = new Option(
