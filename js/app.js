@@ -541,7 +541,7 @@ app.linkValue = function() {
 
 // Dropdown Option
 app.widgetOption = function() {
-  //$(".webWidget").select2();
+  $(".webWidget").select2();
   let websiteDrop = $(".country");
   for (let i = 0; i < webSelect.length; i++) {
     
