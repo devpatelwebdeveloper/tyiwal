@@ -541,7 +541,7 @@ app.linkValue = () => {
 
 // Dropdown Option
 app.widgetOption = () => {
-  $(".webWidget").select2();
+  //$(".webWidget").select2();
   for (let i = 0; i < webSelect.length; i++) {
     let websiteDrop = $(".country");
     websiteDrop = `<option value="${webSelect[i].value}">${
@@ -551,6 +551,10 @@ app.widgetOption = () => {
     $(".webWidget").append(websiteDrop);
   }
 };
+
+app.ie=()=>{
+
+}
 
 // Submit button for the widget
 app.widgetSubmit = () => {
@@ -569,6 +573,7 @@ app.widgetSubmit = () => {
 // Brands Widget
 app.widget = () => {
   app.linkValue();
+  app.ie();
   app.widgetOption();
   app.widgetSubmit();
 };
