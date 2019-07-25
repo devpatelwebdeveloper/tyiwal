@@ -437,8 +437,8 @@ const app = {};
 // };
 
 // Getting the link value based on the Groups
-app.linkValue = () => {
-  webSelect.forEach((item, index) => {
+app.linkValue = function() {
+  webSelect.forEach(function(item, index){
     if (item.groupName === "Group 1") {
       item.value = "https://www.we.org";
     } else if (item.groupName === "Group 2") {
@@ -540,7 +540,7 @@ app.linkValue = () => {
 };
 
 // Dropdown Option
-app.widgetOption = () => {
+app.widgetOption = function() {
   //$(".webWidget").select2();
   let websiteDrop = $(".country");
   for (let i = 0; i < webSelect.length; i++) {
@@ -552,7 +552,7 @@ app.widgetOption = () => {
     
   }
   console.log(websiteDrop)
-  $(".webWidget").html(websiteDrop);
+  $(".webWidget").append(websiteDrop);
 };
 
 // app.ie=()=>{
@@ -560,7 +560,7 @@ app.widgetOption = () => {
 // }
 
 // Submit button for the widget
-app.widgetSubmit = () => {
+app.widgetSubmit = function() {
   $(".submitWebButton").click(function() {
     event.preventDefault();
     const selectedWeb = $(this)
@@ -574,7 +574,7 @@ app.widgetSubmit = () => {
 };
 
 // Brands Widget
-app.widget = () => {
+app.widget = function() {
   app.linkValue();
   
   app.widgetOption();
@@ -582,7 +582,7 @@ app.widget = () => {
 };
 
 //Initialize the app
-app.init = () => {
+app.init = function() {
   //app.toggle();
   app.widget();
 };
