@@ -407,34 +407,34 @@ const webSelect = [
 ];
 
 // Widgets HTML
-//const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="70" width="100%" frameborder="0"></iframe>`;
-//const websiteWidgetFrame = `<form>
-  //   <select class="webWidget" name="Website Dropdown">
-  //     <option value="">Select the Brand</option> </select
-  //   ><button type="submit" class="submitWebButton submit-btn">
-  //     &gt;
-  //   </button>
-  // </form>`;
+// const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="70" width="100%" frameborder="0"></iframe>`;
+// const websiteWidgetFrame = `<form>
+//     <select class="webWidget" name="Website Dropdown">
+//       <option value="">Select the Brand</option> </select
+//     ><button type="submit" class="submitWebButton submit-btn">
+//       &gt;
+//     </button>
+//   </form>`;
 
 const app = {};
 
 // Toggling the widget
-app.toggle = () => {
-  $(".toggleWidget").click(function() {
-    $(this).toggleClass("active");
-    if ($(this).hasClass("active")) {
-      $(this).text("Have code?");
-      $("#havecode").addClass("hide");
-      $("#donthavecode").removeClass("hide");
-    } else {
-      $(this).text("Don't have code?");
-      $("#havecode").removeClass("hide");
-      $("#donthavecode").addClass("hide");
-    }
-  });
-  $("#havecode").append(codeWidgetFrame);
-  $("#donthavecode").append(websiteWidgetFrame);
-};
+// app.toggle = () => {
+//   $(".toggleWidget").click(function() {
+//     $(this).toggleClass("active");
+//     if ($(this).hasClass("active")) {
+//       $(this).text("Have code?");
+//       $("#havecode").addClass("hide");
+//       $("#donthavecode").removeClass("hide");
+//     } else {
+//       $(this).text("Don't have code?");
+//       $("#havecode").removeClass("hide");
+//       $("#donthavecode").addClass("hide");
+//     }
+//   });
+//   $("#havecode").append(codeWidgetFrame);
+//   $("#donthavecode").append(websiteWidgetFrame);
+// };
 
 // Getting the link value based on the Groups
 app.linkValue = () => {
@@ -583,7 +583,7 @@ app.widget = () => {
 
 //Initialize the app
 app.init = () => {
-  app.toggle();
+  //app.toggle();
   app.widget();
 };
 
