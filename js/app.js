@@ -438,7 +438,7 @@ app.toggle = function () {
 
 // Getting the link value based on the Groups
 app.linkValue = function () {
-  webSelect.forEach((item, index) => {
+  webSelect.forEach(function(item, index){
     if (item.groupName === "Group 1") {
       item.value = "https://www.we.org";
     } else if (item.groupName === "Group 2") {
