@@ -545,9 +545,8 @@ app.widgetOption = function() {
   let websiteDrop = $(".country");
   for (let i = 0; i < webSelect.length; i++) {
     
-    websiteDrop = websiteDrop + `<option value="${webSelect[i].value}">${
-      webSelect[i].websiteName
-    }</option>`;
+    websiteDrop = websiteDrop + "<option value="+webSelect[i].value+">"+
+      webSelect[i].websiteName+"</option>";
     
     
   }
