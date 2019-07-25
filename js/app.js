@@ -407,14 +407,14 @@ const webSelect = [
 ];
 
 // Widgets HTML
-const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="70" width="100%" frameborder="0"></iframe>`;
-const websiteWidgetFrame = `<form>
-    <select class="webWidget" name="Website Dropdown">
-      <option value="">Select the Brand</option> </select
-    ><button type="submit" class="submitWebButton submit-btn">
-      &gt;
-    </button>
-  </form>`;
+//const codeWidgetFrame = `<iframe src="https://www.trackyourimpact.com/partner-widget" scrolling="no" height="70" width="100%" frameborder="0"></iframe>`;
+//const websiteWidgetFrame = `<form>
+  //   <select class="webWidget" name="Website Dropdown">
+  //     <option value="">Select the Brand</option> </select
+  //   ><button type="submit" class="submitWebButton submit-btn">
+  //     &gt;
+  //   </button>
+  // </form>`;
 
 const app = {};
 
@@ -541,7 +541,7 @@ app.linkValue = () => {
 
 // Dropdown Option
 app.widgetOption = () => {
-  $(".webWidget").select2();
+  //$(".webWidget").select2();
   let websiteDrop = $(".country");
   for (let i = 0; i < webSelect.length; i++) {
     
@@ -555,9 +555,9 @@ app.widgetOption = () => {
   $(".webWidget").html(websiteDrop);
 };
 
-app.ie=()=>{
+// app.ie=()=>{
 
-}
+// }
 
 // Submit button for the widget
 app.widgetSubmit = () => {
