@@ -419,7 +419,7 @@ const websiteWidgetFrame = `<form>
 const app = {};
 
 // Toggling the widget
-app.toggle = () => {
+app.toggle = function () {
   $(".toggleWidget").click(function() {
     $(this).toggleClass("active");
     if ($(this).hasClass("active")) {
@@ -437,7 +437,7 @@ app.toggle = () => {
 };
 
 // Getting the link value based on the Groups
-app.linkValue = () => {
+app.linkValue = function () {
   webSelect.forEach((item, index) => {
     if (item.groupName === "Group 1") {
       item.value = "https://www.we.org";
@@ -540,7 +540,7 @@ app.linkValue = () => {
 };
 
 // Dropdown Option
-app.widgetOption = () => {
+app.widgetOption = function () {
   //$(".webWidget").select2();
   for (let i = 0; i < webSelect.length; i++) {
     let websiteDrop = $(".country");
@@ -552,12 +552,12 @@ app.widgetOption = () => {
   }
 };
 
-app.ie=()=>{
+// app.ie=()=>{
 
-}
+// }
 
 // Submit button for the widget
-app.widgetSubmit = () => {
+app.widgetSubmit = function () {
   $(".submitWebButton").click(function() {
     event.preventDefault();
     const selectedWeb = $(this)
@@ -571,7 +571,7 @@ app.widgetSubmit = () => {
 };
 
 // Brands Widget
-app.widget = () => {
+app.widget = function () {
   app.linkValue();
   app.ie();
   app.widgetOption();
@@ -579,7 +579,7 @@ app.widget = () => {
 };
 
 //Initialize the app
-app.init = () => {
+app.init = function () {
   app.toggle();
   app.widget();
 };
