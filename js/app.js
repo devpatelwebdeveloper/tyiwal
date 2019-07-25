@@ -542,16 +542,13 @@ app.linkValue = function() {
 // Dropdown Option
 app.widgetOption = function() {
   $(".webWidget").select2();
-  let websiteDrop = $(".country");
   for (let i = 0; i < webSelect.length; i++) {
-    
+    let websiteDrop = $(".country");
     websiteDrop = websiteDrop + "<option value="+webSelect[i].value+">"+
       webSelect[i].websiteName+"</option>";
-    
-    
+
+    $(".webWidget").append(websiteDrop);
   }
-  console.log(websiteDrop)
-  $(".webWidget").append(websiteDrop);
 };
 
 // app.ie=()=>{
